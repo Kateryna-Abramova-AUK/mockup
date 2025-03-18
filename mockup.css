@@ -1,0 +1,102 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    color: #004d40;
+}
+.navbar {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px;
+    color: #004d40;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 1.8em; 
+}
+
+.navbar ul {
+    display: flex; 
+    list-style: none; 
+    gap: 15px; 
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a,
+.navbar .btn {
+    text-decoration: none; 
+    color: #004d40; 
+    padding: 10px 15px; 
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.navbar .btn:hover {
+    background: #00796b;
+}
+
+.btn {
+    background: #00897b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #00796b;
+}
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+.hero-content h1 {
+    font-size: 2.5em;
+}
+.hero-buttons {
+    margin-top: 20px;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px;
+}
+.tracking {
+    text-align: center;
+    padding: 50px;
+}
+.testimonials {
+display: flex;
+flex-direction: row; 
+text-align: center;
+justify-content: space-around; 
+align-items: center; 
+padding: 50px;
+background: #f1f1f1;
+}
+
+.testimonial {
+text-align: left;
+max-width: 30%;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #00897b;
+    color: white;
+}
+h2{
+    text-align: center;
+}
