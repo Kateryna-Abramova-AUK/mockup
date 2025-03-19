@@ -70,7 +70,8 @@ body {
 .features {
     display: flex;
     justify-content: space-around;
-    text-align: center;
+    text-align: left;
+    align-items: center; 
     padding: 50px;
 }
 .tracking {
