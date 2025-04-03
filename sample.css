@@ -1,0 +1,104 @@
+body {
+    font-family: 'Papyrus', 'Chalkduster', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    animation: rainbow 5s infinite;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(24, 247, 24);
+    color: yellow;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    border: 5px dashed rgb(16, 16, 169);
+    padding: 10px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 20px;
+    padding: 30px;
+}
+
+.box {
+    flex-grow: 1;
+    flex-basis: 20px;
+    text-align: center;
+    margin: 5px;
+    padding: 15px;
+    border: 5px dotted orange;
+}
+
+.float-box {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 0, 195);
+    margin: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border: 5px double lightcoral;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: magenta;
+    }
+
+    .section {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.spinny-text {
+    display: inline-block;
+    animation: spin 2s infinite linear;
+}
+
+@keyframes rainbow {
+    0% { background-color: red; }
+    20% { background-color: orange; }
+    40% { background-color: yellow; }
+    60% { background-color: green; }
+    80% { background-color: blue; }
+    100% { background-color: purple; }
+}
+
+.rainbow-bg {
+    animation: rainbow 5s infinite;
+}
+
+@keyframes wiggle {
+    0%, 100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+}
+
+.wiggly-text {
+    display: inline-block;
+    animation: wiggle 0.5s infinite;
+}
