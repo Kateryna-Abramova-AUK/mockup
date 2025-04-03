@@ -25,6 +25,13 @@ header {
     margin: 20px;
     padding: 30px;
 }
+table {
+    width: 70%;
+    border-collapse: collapse;
+    border: dotted 5px lightcoral;
+    margin: 20px auto;
+
+}
 
 .box {
     flex-grow: 1;
@@ -32,7 +39,7 @@ header {
     text-align: center;
     margin: 5px;
     padding: 15px;
-    border: 5px dotted orange;
+    border: 5px double orange;
 }
 
 .float-box {
@@ -41,10 +48,10 @@ header {
     height: 100px;
     background: rgb(255, 0, 195);
     margin: 10px;
-    position: absolute;
+    position:sticky;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 15%;
 }
 
 footer {
