@@ -1,7 +1,8 @@
 body {
     font-family: 'Papyrus', 'Chalkduster', cursive, sans-serif;
     margin: 0;
-    padding: 0;
+    /* Padding of 10px ensures consistent spacing around the content for better readability and layout balance. */
+    padding: 10px;
     animation: rainbow 5s infinite;
     box-sizing: border-box;
 }
@@ -31,7 +32,14 @@ table {
     margin: 20px auto;
 
 }
-
+img {
+    border: 2px solid black;
+    display: block;
+    margin: 0 auto; 
+    width: 50%;
+  height: auto;
+  }
+  
 .box {
     flex-grow: 1;
     flex-basis: 20px;
@@ -58,7 +66,7 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    border: 5px double lightcoral;
+    border: 5px dotted lightcoral;
     background: black;
     color: white;
     padding: 10px;
@@ -78,13 +86,19 @@ footer {
 
 @keyframes rainbow {
     0% { background-color: red; }
-    20% { background-color:orange; }
-    40% { background-color: yellow; }
-    60% { background-color:lime; }
-    80% { background-color:aqua; }
-    100% { background-color:darkorchid; }
+    10% { background-color:orange; }
+    20% { background-color: yellow; }
+    35% { background-color:green; }
+    50% { background-color:lime; }
+    60% { background-color:aqua; }
+    70% { background-color:blue; }
+    90% { background-color:darkorchid; }
+    100% { background-color:palevioletred; }
+
 }
 
 .rainbow-bg {
+.rainbow-container-bg {
     animation: rainbow 5s infinite;
+}
 }

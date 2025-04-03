@@ -77,10 +77,38 @@ body {
     gap: 40px;
     padding: 150px;
 }
+
+
+.cardTracking {
+    width: 150px;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+    background-size: auto;
+    border-radius: 15px;
+    text-align: left;
+}
+.tracking card-content h3 {
+    font-size: 14px;
+    margin: 0;
+    font: normal 400 14px/1.5 "Montserrat", sans-serif;
+
+}
+.card-content p {
+    font-size: 20px;
+    margin: 0;
+    font: normal 400 14px/1.5 "Montserrat", sans-serif;
+}
+
+
 .tracking {
     text-align: center;
     padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
+
 .testimonials {
     display: flex;
     justify-content: space-around;
@@ -92,6 +120,7 @@ body {
 }
 
 .testimonial {
+    font: normal 400 14px/1.5 "Montserrat", sans-serif;
     text-align: left;
     max-width: 30%;
     background-color: white;
