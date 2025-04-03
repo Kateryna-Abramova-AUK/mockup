@@ -12,7 +12,6 @@ header {
     text-align: center;
     position: sticky;
     top: 0;
-    z-index: 9999;
     padding: 10px;
 }
 
@@ -48,7 +47,7 @@ table {
     height: 100px;
     background: rgb(255, 0, 195);
     margin: 10px;
-    position:sticky;
+    position: sticky;
     left: 50%;
     top: 50%;
     bottom: 15%;
@@ -76,13 +75,14 @@ footer {
     }
 }
 
+
 @keyframes rainbow {
     0% { background-color: red; }
-    20% { background-color: orange; }
+    20% { background-color:orange; }
     40% { background-color: yellow; }
-    60% { background-color: green; }
-    80% { background-color: blue; }
-    100% { background-color: purple; }
+    60% { background-color:lime; }
+    80% { background-color:aqua; }
+    100% { background-color:darkorchid; }
 }
 
 .rainbow-bg {
