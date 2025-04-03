@@ -13,7 +13,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 9999;
-    border: 5px dashed rgb(16, 16, 169);
     padding: 10px;
 }
 
@@ -61,23 +60,13 @@ footer {
 
 @media (max-width: 600px) {
     body {
-        background-color: magenta;
+        animation: rainbow 5s infinite;
     }
 
     .section {
         flex-direction: column-reverse;
         justify-content: center;
     }
-}
-
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
-.spinny-text {
-    display: inline-block;
-    animation: spin 2s infinite linear;
 }
 
 @keyframes rainbow {
@@ -91,14 +80,4 @@ footer {
 
 .rainbow-bg {
     animation: rainbow 5s infinite;
-}
-
-@keyframes wiggle {
-    0%, 100% { transform: rotate(-3deg); }
-    50% { transform: rotate(3deg); }
-}
-
-.wiggly-text {
-    display: inline-block;
-    animation: wiggle 0.5s infinite;
 }
