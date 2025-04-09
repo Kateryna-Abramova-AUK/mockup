@@ -129,6 +129,66 @@ body {
     border-radius: 10px;
 }
 
+.main-container-pages {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    margin: 2rem;
+    gap: 2rem;
+    transition: all 1s ease-in-out, opacity 0.5s ease-in-out, height 0ms;
+}
+
+.sidebar a:hover {
+    background-color: #f1f1f1;
+    animation: spin 0.5s linear;
+}
+
+.sidebar a.active {
+    background-color: #555;
+    color: #fff;
+}
+
+ul li
+{
+    list-style-type: none;
+}
+
+.sidebar {
+    font: normal 400 14px/1.5 "Montserrat", sans-serif;
+    text-decoration: none;
+    position: sticky;
+    top: 1rem;
+    width: 220px;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    height: fit-content;;
+}
+
+.sidebar a {
+    text-decoration: none; 
+    color: #333; 
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+} 
+
+.content {
+    font: normal 400 14px/1.5 "Montserrat", sans-serif;
+    flex: 1;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    min-width: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.content h3 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    transition: opacity 0.5s ease-in-out;
+}
+
 footer {
     position:static;
     text-align: center;
@@ -152,10 +212,22 @@ h2{
     text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 740px) {
     .section {
-        flex-direction: column-reverse;
+        flex-direction:row-reverse;
         justify-content: center;
     }
+    .main-container-pages {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        position: static;
+    }
+}
+
+@keyframes spin{
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(360deg)}
 }
 

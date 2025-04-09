@@ -1,7 +1,6 @@
 body {
     font-family: 'Papyrus', 'Chalkduster', cursive, sans-serif;
     margin: 0;
-    /* Padding of 10px ensures consistent spacing around the content for better readability and layout balance. */
     padding: 10px;
     animation: rainbow 5s infinite;
     box-sizing: border-box;
@@ -72,7 +71,38 @@ footer {
     padding: 10px;
 }
 
-@media (max-width: 600px) {
+/* Sidebar styles */
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 80px; /* Adjust based on your navbar height */
+    left: 0;
+    background-color: #f4f4f4;
+    padding: 20px;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    color: #007BFF;
+}
+
+@media (min-width: 740px) {
     body {
         animation: rainbow 5s infinite;
     }
