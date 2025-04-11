@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Papyrus', 'Chalkduster', cursive, sans-serif;
     margin: 0;
@@ -5,7 +8,16 @@ body {
     animation: rainbow 5s infinite;
     box-sizing: border-box;
 }
-
+.title-section {
+    background-image: url('planets.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    background-size: cover;
+}
 header {
     background-color: rgb(24, 247, 24);
     color: yellow;
@@ -24,12 +36,63 @@ header {
     margin: 20px;
     padding: 30px;
 }
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.divs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: small;
+    width: 40%; 
+}
+
+.text-div {
+    width: 55%; 
+    font: optional;
+}
+.container h2{
+    text-shadow: #FFFF00 1px 1px 2px;
+}
+.div1{
+    border: #333 solid 5px;
+    background: #bbb;
+
+}
+.div2{
+    border: #333 solid 5px;
+    background: #bbb;
+
+}
+.div3{
+    border: #333 solid 5px;
+    background: #bbb;
+
+}
+.div4{
+    border: #333 solid 5px;
+    background: #bbb;
+
+}
+.div5{
+    border: #333 solid 5px;
+    background: #bbb;
+
+}
+
 table {
-    width: 70%;
+    width: 490px;
+    height: 490px;
+    margin: 0 auto;
     border-collapse: collapse;
     border: dotted 5px lightcoral;
-    margin: 20px auto;
-
 }
 img {
     border: 2px solid black;
@@ -59,6 +122,55 @@ img {
     top: 50%;
     bottom: 15%;
 }
+.floating-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    text-shadow: #5eff00 1px 1px 2px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    animation: floatAround 10s linear infinite;
+}
+
+.table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    }
+
+.table th, table td {
+    border: 1px solid #000; 
+    padding: 8px; 
+    text-align: center; 
+}
+.cell-red {
+    background-color: red; 
+    color: white; 
+}
+.cell-blue {
+    background-color: blue; 
+    color: white;
+}
+.cell-yellow-near-red {
+    background-color: #FFCC00;
+    color: black; 
+}
+.cell-yellow-near-blue {
+    background-color: #FFFF00; 
+    color: black; 
+}
+.text-image {
+    display: block;
+    width: 65%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
 
 footer {
     position: fixed;
@@ -69,37 +181,6 @@ footer {
     background: black;
     color: white;
     padding: 10px;
-}
-
-/* Sidebar styles */
-.sidebar {
-    width: 200px;
-    position: fixed;
-    top: 80px; /* Adjust based on your navbar height */
-    left: 0;
-    background-color: #f4f4f4;
-    padding: 20px;
-    height: 100%;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin: 15px 0;
-}
-
-.sidebar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.sidebar ul li a:hover {
-    color: #007BFF;
 }
 
 @media (min-width: 740px) {
@@ -125,6 +206,30 @@ footer {
     90% { background-color:darkorchid; }
     100% { background-color:palevioletred; }
 
+}
+
+
+@keyframes floatAround {
+    0% {
+        top: 10%;
+        left: 0%;
+    }
+    25% {
+        top: 10%;
+        left: 80%;
+    }
+    50% {
+        top: 80%;
+        left: 80%;
+    }
+    75% {
+        top: 80%;
+        left: 10%;
+    }
+    100% {
+        top: 10%;
+        left: 0%;
+    }
 }
 
 .rainbow-bg {
