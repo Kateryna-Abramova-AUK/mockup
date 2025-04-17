@@ -18,11 +18,12 @@ body {
     align-items: center; 
     padding: 20px;
     transform: translateX(-100%);
-    /* visibility: hidden; */
     display: none;
+    /* visibility: hidden; */
+
 }
 
-.navbar h1 {
+.navbar h2 {
     margin: 0;
     font-size: 1.8em; 
 }
@@ -65,22 +66,22 @@ body {
     align-items: center;
     padding: 50px;
 }
-.hero-content h2 {
-    font-size: 65px;
+.hero-content h1 {
+    font-size: 24px;
 }
 .hero-buttons {
-    margin-top: 20px;
+    display: none;
 }
 
 .features {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     text-align: left;
     align-items: center; 
     gap: 40px;
     padding: 150px;
 }
-
 
 .cardTracking {
     width: 150px;
@@ -91,7 +92,7 @@ body {
     border-radius: 15px;
     text-align: left;
 }
-.tracking card-content h3 {
+.tracking .card-content h3 {
     font-size: 14px;
     margin: 0;
     font: normal 400 14px/1.5 "Montserrat", sans-serif;
@@ -113,18 +114,19 @@ body {
 
 .testimonials {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     text-align: left;
     align-items: center; 
     gap: 40px;
-    padding: 100px;
     flex-wrap: wrap;
+    padding: 10px;
 }
 
 .testimonial {
     font: normal 400 14px/1.5 "Montserrat", sans-serif;
     text-align: left;
-    max-width: 30%;
+    max-width: 90%;
     background-color: white;
     padding: 10px;
     background-size: auto;
@@ -168,11 +170,10 @@ body {
 
 }
 
-ul li
+.ul li
 {
     list-style-type: none;
 }
-
 .sidebar {
     font: normal 400 14px/1.5 "Montserrat", sans-serif;
     text-decoration: none;
@@ -195,8 +196,13 @@ ul li
     display: block;
     padding: 10px;
     border-radius: 5px;
-} 
-
+    
+}
+.sidebar ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
 .content {
     font: normal 400 14px/1.5 "Montserrat", sans-serif;
     flex: 1;
@@ -241,6 +247,9 @@ h2{
     .main-container-pages {
         flex-direction: row;
     }
+    .hero-content h1 {
+        font-size: 65px;
+    }
 
     .sidebar {
         position: relative;
@@ -255,19 +264,48 @@ h2{
     }
     .navbar {
         transform: translateX(0);
+        display: flex;
         visibility: visible;
+    }
+    .hero-buttons {
+        display: flex;
+        margin-top: 20px;
+        gap: 20px;
     }
     .navbar ul {
         display: flex;
     }
+    .features {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+        align-items: center; 
+        gap: 40px;
+        padding: 150px;
+    }
+    .features .cardTracking {
+        max-width: 30%;
+    }
+    .testimonials {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+        align-items: center; 
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 150px;
+    }
+    .testimonials .testimonial {
+        max-width: 30%;
+    }
+
+
     .footer {
         padding: 20px;
         font-size: 14px;
     }
 }
 
-@keyframes spin{
-    0%{transform:rotate(0deg)}
-    100%{transform:rotate(360deg)}
-}
+
 
